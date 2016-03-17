@@ -1,0 +1,16 @@
+[
+{
+  "modid": "thedistillery",
+  "name": "The Distillery",
+  "description": "A distillery to allow the making of both potions and potion combinations in a stackable form. As well as some extended recipes for Vanilla.",
+  "version": "1.0a",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ExcitedName"],
+  "credits": "ExcitedName",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,162 @@
+//The Distillery
+
+//Dis
+
+    //Distilleries
+item.DistMin.name=Distillery(Miner)
+item.DistTra.name=Distillery(Traveller)
+item.DistIro.name=Distillery(Iron Skin)
+item.DistWar.name=Distillery(Warrior)
+item.DistHea.name=Distillery(Health)
+item.DistWat.name=Distillery(Water Breathing)
+item.DistHot.name=Distillery(Hypno's Hot Sauce)
+item.ComDistKra.name=Distillery(Kracken)
+item.ComDistDra.name=Distillery(Dragon)
+
+    //EOilSmall
+item.MinOilS.name=Essential Oil(Miner)
+item.TraOilS.name=Essential Oil(Traveller)
+item.IroOilS.name=Essential Oil(Iron Skin)
+item.WarOilS.name=Essential Oil(Warrior)
+item.HeaOilS.name=Essential Oil(Health)
+item.WatOilS.name=Essential Oil(Water Breathing)
+item.HotOilS.name=Hypno's Hot Sauce
+item.KraOilS.name=Essential Oil(Kracken)
+item.DraOilS.name=Essential Oil(Dragon)
+
+    //EOilLarge
+item.MinOilL.name=Essential Oil(Miner)
+item.TraOilL.name=Essential Oil(Traveller)
+item.IroOilL.name=Essential Oil(Iron Skin)
+item.WarOilL.name=Essential Oil(Warrior)
+item.HeaOilL.name=Essential Oil(Health)
+item.WatOilL.name=Essential Oil(Water Breathing)
+item.HotOilL.name=Hypno's Hot Sauce
+item.KraOilL.name=Essential Oil(Kracken)
+item.DraOilL.name=Essential Oil(Dragon)
+
+    //Juice
+item.FruJui.name=Fruit Juice
+item.FruJuiHea.name=Healing Fruit Juice
+
+    //Pearls
+item.IroPearl.name=Iron Pearl
+item.IroPearlE.name=Enhanced Iron Pearl
+
+
+
+//Ing
+
+    //Util
+item.CerJui.name=Ceramic Juicer
+item.MandP.name=Mortar & Pestel
+item.BBurT1.name=Bunsen Burner
+item.BBurT2.name=Bunsen Burner(Enhanced)
+item.BBurT3.name=Bunsen Burner(Excited)
+
+    //Glass
+item.Bla.name=Glass Blank
+item.ETu.name=Glass Extraction Tube
+item.CCoiT1.name=Glass Condensing Coil(Left)
+item.CCoiT2.name=Glass Condensing Coil(Center)
+item.CCoiT3.name=Glass Condensing Coil(Right)
+item.FunT1.name=Glass Funnel
+item.FunT2.name=Glass Funnel(Excited)
+item.BotSma.name=Glass Bottle(Small)
+item.BotLar.name=Glass Bottle(Large)
+item.GJar.name=Glass Jar
+item.GDist.name=Distillery
+
+    //Material
+item.CrafMedT1.name=Crafting Medallion
+item.CrafMedT2.name=Crafting Medallion(Enhanced)
+item.CrafMedET1.name=Crafting Medallion(Excited)
+item.CrafMedEPot.name=Potato Medallion
+item.ClaJui.name=Clay juicer
+item.SteIng.name=Steel Ingot
+item.DistCry.name=Distillation Crystal
+item.GemDistCryE.name=Distillation Crystal(Excited)
+item.GemIce.name=Ice Crystal
+item.GemFir.name=Fire Crystal
+item.FragIce.name=Ice Shard
+item.FragIro.name=Iron Nugget
+item.FragEme.name=Emerald Shard
+item.FragDia.name=Diamond Shard
+item.FragDist.name=Distillation Shard
+item.DistShaE.name=Distillation Shard(Excited)
+item.IroRod.name=Iron Rod
+item.Lily.name=Distillation Lilly
+item.LilyE.name=Distillation Lilly(Excited)
+item.GrouFlo.name=Ground Flour
+item.GrouWPu.name=Wood Pulp
+item.DistH2O.name=Distillery(H2O)
+item.DistLav.name=Distillery(Lava)
+item.H2OJar.name=Water Jar
+item.LavJar.name=Lava Jar
+
+    //Lamp
+tile.Lamp.name=Lamp
+tile.LampE.name=Lamp(Enhanced)
+tile.LampEx.name=Lamp(Excited)
+
+
+
+//Storage
+
+    //Vat
+item.VatVat.name=Vat(Empty)
+item.VatMin.name=Vat(Miner)
+item.VatTra.name=Vat(Traveller)
+item.VatIro.name=Vat(Iron Skin)
+item.VatWar.name=Vat(Warrior)
+item.VatHea.name=Vat(Health)
+item.VatWat.name=Vat(Water Breathing)
+item.VatHot.name=Vat(Hypno's Hot Sauce)
+item.KraEVat.name=Vat(Kracken)
+item.DraEVat.name=Vat(Dragon)
+item.FruJuiVat.name=Vat(Fruit Juice)
+item.FruJuiHeaVat.name=Vat(Healing Fruit Juice)
+item.H2OVat.name=Vat(Water)
+item.LavVat.name=Vat(Lava)
+
+    //Barrel
+item.Barrel.name=Barrel(Empty)
+item.GlassBar.name=Barrel(Glass Blank)
+item.BoneBar.name=Barrel(Bone)
+item.DistCryBar.name=Barrel(Distillation Crystal)
+item.DistCryEBar.name=Barrel(Distillation Crystal(Excited))
+item.LilyBar.name=Barrel(Lily)
+item.LilyEBar.name=Barrel(Lily(Excited))
+item.FlourBar.name=Barrel(Ground Flour)
+item.WPulpBar.name=Barrel(Wood Pulp)
+
+
+
+//MRE
+
+item.MREMLoaf.name=MRE(Menu 24)
+item.MREBePat.name=MRE(Menu 8)
+item.MREMLo.name=
+item.MREMLo.name=
+item.MREMLo.name=
+item.MREMLo.name=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
