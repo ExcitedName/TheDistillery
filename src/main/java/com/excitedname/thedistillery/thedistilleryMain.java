@@ -4,7 +4,7 @@ import org.apache.logging.log4j.core.Logger;
 
 import com.excitedname.thedistillery.distilleries.Dis;
 import com.excitedname.thedistillery.ingredients.Ing;
-import com.excitedname.thedistillery.oredictionary.OreDictionary;
+import com.excitedname.thedistillery.oredictionary.DistOreDictionary;
 import com.excitedname.thedistillery.proxies.ClientProxy;
 import com.excitedname.thedistillery.proxies.CommonProxy;
 import com.excitedname.thedistillery.ref.Ref;
@@ -66,7 +66,7 @@ public void Init(FMLInitializationEvent event){
 	
 		
 	//Ore Dictionary
-		OreDictionary.InitOreDictionary();
+		DistOreDictionary.InitDistOreDictionary();
 		
 	//Recipes
 		Dis.DistRec();
