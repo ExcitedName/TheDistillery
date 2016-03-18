@@ -103,7 +103,7 @@ public static void EOilSmall() {
 	GameRegistry.registerItem(KraOilS, "KraOilS");
 	
 	DraOilS = new DraOilS();
-	GameRegistry.registerItem(DraOilS, "DraOilS");
+	GameRegistry.registerItem(DraOilS, "DraOilS");	
 	
 }
 	
