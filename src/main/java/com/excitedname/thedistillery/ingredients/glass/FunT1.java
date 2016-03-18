@@ -10,22 +10,21 @@ import net.minecraft.item.Item;
 
 public class FunT1 extends Item {
 
+	public FunT1() {
+		
+		this.setUnlocalizedName("FunT1");
+		this.setTextureName("FunT1");
+		this.setCreativeTab(Tabs.IngTab);
+	}
 
-		public FunT1() {
-			
-			this.setUnlocalizedName("FunT1");
-			this.setTextureName("FunT1");
-			this.setCreativeTab(Tabs.IngTab);
-		}
+//Texture Icon	
 
-	//Texture Icon	
-
-		@Override
-		@SideOnly(Side.CLIENT)
-			
-		public void registerIcons(IIconRegister iconReg){
-			itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-				.substring(this.getUnlocalizedName().indexOf(".")+1));
-		}
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
 			
 }

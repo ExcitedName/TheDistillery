@@ -19,12 +19,12 @@ public class Barrel extends Item {
 
 //Texture Icon	
 
-	@Override
-	@SideOnly(Side.CLIENT)
-		
-	public void registerIcons(IIconRegister iconReg){
-		itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-			.substring(this.getUnlocalizedName().indexOf(".")+1));
-	}
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
 	
 }

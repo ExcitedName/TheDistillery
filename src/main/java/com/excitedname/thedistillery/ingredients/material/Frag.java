@@ -20,12 +20,12 @@ public class Frag extends Item {
 	@SideOnly(Side.CLIENT)
     private IIcon[] IIcons;
 	
-		public Frag() {
-			
-			this.setUnlocalizedName("Frag");
-			this.setHasSubtypes(true);
-			this.setCreativeTab(Tabs.IngTab);
-		}
+	public Frag() {
+		
+		this.setUnlocalizedName("Frag");
+		this.setHasSubtypes(true);
+		this.setCreativeTab(Tabs.IngTab);
+	}
 
 @SideOnly(Side.CLIENT)
 public IIcon getIconFromDamage(int par1Icons)

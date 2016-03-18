@@ -10,21 +10,19 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 
-public class MRE extends Item {
+public class MRE extends ItemFood {
 
-	private static final String[] meta = new String[] {"MLoaf", "BePat"};
+	private static final String[] meta = new String[] {"MLo", "BePat"};
 	@SideOnly(Side.CLIENT)
     private IIcon[] IIcons;
-	
-	
-	
 
-	public MRE() {
-		
+	public MRE(int food, float saturation, boolean wolfFood) {
+		super(2, 1.5F, true);
 		this.setUnlocalizedName("MRE");
 		this.setHasSubtypes(true);
 		this.setCreativeTab(Tabs.DisTab);

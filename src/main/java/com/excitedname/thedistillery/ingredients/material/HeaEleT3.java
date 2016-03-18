@@ -18,7 +18,7 @@ public class HeaEleT3 extends Item {
 		this.setCreativeTab(Tabs.IngTab);
 	}
 	
-	public boolean hasEffect(ItemStack par1ComDist, int pass){
+	public boolean hasEffect(ItemStack par1HeaEleT3, int pass){
 		return true;
 	}
 

@@ -10,22 +10,21 @@ import net.minecraft.item.Item;
 
 public class IroRod extends Item {
 
+	public IroRod() {
+		
+		this.setUnlocalizedName("IroRod");
+		this.setTextureName("IroRod");
+		this.setCreativeTab(Tabs.IngTab);
+	}
 
-		public IroRod() {
-			
-			this.setUnlocalizedName("IroRod");
-			this.setTextureName("IroRod");
-			this.setCreativeTab(Tabs.IngTab);
-		}
+//Texture Icon	
 
-	//Texture Icon	
-
-		@Override
-		@SideOnly(Side.CLIENT)
-			
-		public void registerIcons(IIconRegister iconReg){
-			itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-				.substring(this.getUnlocalizedName().indexOf(".")+1));
-		}
-			
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
+		
 }

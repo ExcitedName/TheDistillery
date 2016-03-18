@@ -20,12 +20,12 @@ public class Grou extends Item {
 	@SideOnly(Side.CLIENT)
     private IIcon[] IIcons;
 
-		public Grou() {
-			
-			this.setUnlocalizedName("Grou");
-			this.setHasSubtypes(true);
-			this.setCreativeTab(Tabs.IngTab);
-		}
+	public Grou() {
+		
+		this.setUnlocalizedName("Grou");
+		this.setHasSubtypes(true);
+		this.setCreativeTab(Tabs.IngTab);
+	}
 
 @SideOnly(Side.CLIENT)
 public IIcon getIconFromDamage(int par1Icons)

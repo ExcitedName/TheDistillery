@@ -20,12 +20,12 @@ public class CCoi extends Item {
 	@SideOnly(Side.CLIENT)
     private IIcon[] IIcons;
 
-public CCoi() {
-	
-	this.setUnlocalizedName("CCoi");
-	this.setHasSubtypes(true);
-	this.setCreativeTab(Tabs.IngTab);
-}
+	public CCoi() {
+		
+		this.setUnlocalizedName("CCoi");
+		this.setHasSubtypes(true);
+		this.setCreativeTab(Tabs.IngTab);
+	}
 
 @SideOnly(Side.CLIENT)
 public IIcon getIconFromDamage(int par1Icons)
@@ -34,18 +34,18 @@ public IIcon getIconFromDamage(int par1Icons)
         return this.IIcons[j];
     }
 	
-public String getUnlocalizedName(ItemStack par1Bot)
+public String getUnlocalizedName(ItemStack par1CCoi)
     {
-        int i = MathHelper.clamp_int(par1Bot.getItemDamage(), 0, 2);
+        int i = MathHelper.clamp_int(par1CCoi.getItemDamage(), 0, 2);
         return super.getUnlocalizedName() + Meta[i];
     }
 
 @SideOnly(Side.CLIENT)
-public void getSubItems(Item par1Bot, CreativeTabs par2Tabs, List par3List)
+public void getSubItems(Item par1CCoi, CreativeTabs par2Tabs, List par3List)
     {
         for (int i = 0; i < 3; ++i)
         {
-        	par3List.add(new ItemStack(par1Bot, 1, i));
+        	par3List.add(new ItemStack(par1CCoi, 1, i));
         }
     }
 

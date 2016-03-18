@@ -20,12 +20,12 @@ public class CrafMed extends Item {
 	@SideOnly(Side.CLIENT)
     private IIcon[] IIcons;
 	
-		public CrafMed() {
-			
-			this.setUnlocalizedName("CrafMed");
-			this.setHasSubtypes(true);
-			this.setCreativeTab(Tabs.IngTab);
-		}
+	public CrafMed() {
+		
+		this.setUnlocalizedName("CrafMed");
+		this.setHasSubtypes(true);
+		this.setCreativeTab(Tabs.IngTab);
+	}
 
 @SideOnly(Side.CLIENT)
 public IIcon getIconFromDamage(int par1Icons)

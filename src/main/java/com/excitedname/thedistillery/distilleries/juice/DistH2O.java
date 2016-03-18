@@ -147,7 +147,7 @@ public ItemStack onItemRightClick(ItemStack par1DistH2O, World p_77659_2_, Entit
 
                 if (this.tryPlaceContainedLiquid(p_77659_2_, i, j, k) && !p_77659_3_.capabilities.isCreativeMode)
                 {
-                    return new ItemStack(Ing.GJar);
+                    return new ItemStack(Ing.GDist);
                 }
             }
         }

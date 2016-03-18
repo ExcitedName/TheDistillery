@@ -134,12 +134,9 @@ item.WPulpBar.name=Barrel(Wood Pulp)
 
 //MRE
 
-item.MREMLoaf.name=MRE(Menu 24)
+item.MREMLo.name=MRE(Menu 24)
 item.MREBePat.name=MRE(Menu 8)
-item.MREMLo.name=
-item.MREMLo.name=
-item.MREMLo.name=
-item.MREMLo.name=
+
 
 
 

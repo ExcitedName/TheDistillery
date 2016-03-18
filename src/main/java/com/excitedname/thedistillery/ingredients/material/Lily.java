@@ -10,22 +10,21 @@ import net.minecraft.item.Item;
 
 public class Lily extends Item {
 
+	public Lily() {
+		
+		this.setUnlocalizedName("Lily");
+		this.setTextureName("Lily");
+		this.setCreativeTab(Tabs.IngTab);
+	}
 
-		public Lily() {
-			
-			this.setUnlocalizedName("Lily");
-			this.setTextureName("Lily");
-			this.setCreativeTab(Tabs.IngTab);
-		}
+//Texture Icon	
 
-	//Texture Icon	
-
-		@Override
-		@SideOnly(Side.CLIENT)
-			
-		public void registerIcons(IIconRegister iconReg){
-			itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-				.substring(this.getUnlocalizedName().indexOf(".")+1));
-		}
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
 			
 }

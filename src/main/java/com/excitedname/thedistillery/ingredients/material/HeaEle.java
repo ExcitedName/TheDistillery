@@ -34,18 +34,18 @@ public IIcon getIconFromDamage(int par1Icons)
 	    return this.IIcons[j];
 	}
 
-public String getUnlocalizedName(ItemStack par1Frag)
+public String getUnlocalizedName(ItemStack par1HeaEle)
 	{
-	    int i = MathHelper.clamp_int(par1Frag.getItemDamage(), 0, 1);
+	    int i = MathHelper.clamp_int(par1HeaEle.getItemDamage(), 0, 1);
 	    return super.getUnlocalizedName() + Meta[i];
 	}
 
 @SideOnly(Side.CLIENT)
-public void getSubItems(Item par1Frag, CreativeTabs par2Tabs, List par3List)
+public void getSubItems(Item par1HeaEle, CreativeTabs par2Tabs, List par3List)
 	{
 	    for (int i = 0; i < 2; ++i)
 	    {
-	    	par3List.add(new ItemStack(par1Frag, 1, i));
+	    	par3List.add(new ItemStack(par1HeaEle, 1, i));
 	    }
 	}
 

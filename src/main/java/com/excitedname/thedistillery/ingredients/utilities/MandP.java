@@ -11,21 +11,21 @@ import net.minecraft.item.Item;
 public class MandP extends Item {
 
 
-		public MandP() {
-			
-			this.setUnlocalizedName("MandP");
-			this.setTextureName("MandP");
-			this.setCreativeTab(Tabs.IngTab);
-		}
+	public MandP() {
+		
+		this.setUnlocalizedName("MandP");
+		this.setTextureName("MandP");
+		this.setCreativeTab(Tabs.IngTab);
+	}
 
-	//Texture Icon	
+//Texture Icon	
 
-		@Override
-		@SideOnly(Side.CLIENT)
-			
-		public void registerIcons(IIconRegister iconReg){
-			itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-				.substring(this.getUnlocalizedName().indexOf(".")+1));
-		}
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
 			
 }

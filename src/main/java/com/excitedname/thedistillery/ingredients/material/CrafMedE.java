@@ -20,16 +20,16 @@ public class CrafMedE extends Item {
 	@SideOnly(Side.CLIENT)
     private IIcon[] IIcons;
 
-		public CrafMedE() {
-			
-			this.setUnlocalizedName("CrafMedE");
-			this.setHasSubtypes(true);
-			this.setCreativeTab(Tabs.IngTab);
-		}
+	public CrafMedE() {
 		
-		public boolean hasEffect(ItemStack par1ComDist, int pass){
-			return true;
-		}
+		this.setUnlocalizedName("CrafMedE");
+		this.setHasSubtypes(true);
+		this.setCreativeTab(Tabs.IngTab);
+	}
+	
+	public boolean hasEffect(ItemStack par1ComDist, int pass){
+		return true;
+	}
 
 @SideOnly(Side.CLIENT)
 public IIcon getIconFromDamage(int par1Icons)
@@ -38,18 +38,18 @@ public IIcon getIconFromDamage(int par1Icons)
 	    return this.IIcons[j];
 	}
 
-public String getUnlocalizedName(ItemStack par1Gem)
+public String getUnlocalizedName(ItemStack par1CrafMedE)
 	{
-	    int i = MathHelper.clamp_int(par1Gem.getItemDamage(), 0, 1);
+	    int i = MathHelper.clamp_int(par1CrafMedE.getItemDamage(), 0, 1);
 	    return super.getUnlocalizedName() + Meta[i];
 	}
 
 @SideOnly(Side.CLIENT)
-public void getSubItems(Item par1Gem, CreativeTabs par2Tabs, List par3List)
+public void getSubItems(Item par1CrafMedE, CreativeTabs par2Tabs, List par3List)
 	{
 	    for (int i = 0; i < 2; ++i)
 	    {
-	    	par3List.add(new ItemStack(par1Gem, 1, i));
+	    	par3List.add(new ItemStack(par1CrafMedE, 1, i));
 	    }
 	}
 

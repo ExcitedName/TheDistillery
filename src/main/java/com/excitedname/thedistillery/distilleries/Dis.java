@@ -204,7 +204,7 @@ public static void Pearls() {
 	
 public static void MRE() {
 	
-	MRE = new MRE();
+	MRE = new MRE(2, 1.5F, true);
 	GameRegistry.registerItem(MRE, "MRE");
 	
 }

@@ -12,25 +12,25 @@ import net.minecraft.item.ItemStack;
 public class DistShaE extends Item {
 
 
-		public DistShaE() {
-			
-			this.setUnlocalizedName("DistShaE");
-			this.setTextureName("DistShaE");
-			this.setCreativeTab(Tabs.IngTab);
-		}
+	public DistShaE() {
 		
-		public boolean hasEffect(ItemStack par1ComDist, int pass){
-			return true;
-		}
+		this.setUnlocalizedName("DistShaE");
+		this.setTextureName("DistShaE");
+		this.setCreativeTab(Tabs.IngTab);
+	}
+	
+	public boolean hasEffect(ItemStack par1DistShaE, int pass){
+		return true;
+	}
 
 //Texture Icon	
 
-	@Override
-	@SideOnly(Side.CLIENT)
-		
-	public void registerIcons(IIconRegister iconReg){
-		itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-			.substring(this.getUnlocalizedName().indexOf(".")+1));
-	}
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
 			
 }

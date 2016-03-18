@@ -30,10 +30,10 @@ public class LampE extends Block {
 		return false;
 	};
 	
-	@Override
-	@SideOnly(Side.CLIENT)
-	public void registerBlockIcons(IIconRegister iconReg) {
-		blockIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + (this.getUnlocalizedName()).substring(5));
-	}
+@Override
+@SideOnly(Side.CLIENT)
+public void registerBlockIcons(IIconRegister iconReg) {
+	blockIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + (this.getUnlocalizedName()).substring(5));
+}
 	
 }

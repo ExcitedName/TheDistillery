@@ -20,16 +20,16 @@ public class Gem extends Item {
 	@SideOnly(Side.CLIENT)
     private IIcon[] IIcons;
 
-		public Gem() {
-			
-			this.setUnlocalizedName("Gem");
-			this.setHasSubtypes(true);
-			this.setCreativeTab(Tabs.IngTab);
-		}
+	public Gem() {
 		
-		public boolean hasEffect(ItemStack par1ComDist, int pass){
-			return true;
-		}
+		this.setUnlocalizedName("Gem");
+		this.setHasSubtypes(true);
+		this.setCreativeTab(Tabs.IngTab);
+	}
+	
+	public boolean hasEffect(ItemStack par1ComDist, int pass){
+		return true;
+	}
 
 @SideOnly(Side.CLIENT)
 public IIcon getIconFromDamage(int par1Icons)

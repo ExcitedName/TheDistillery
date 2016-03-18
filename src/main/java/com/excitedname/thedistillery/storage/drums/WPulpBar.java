@@ -11,22 +11,21 @@ import net.minecraft.item.ItemStack;
 
 public class WPulpBar extends Item {
 
+	public WPulpBar() {
+		
+		this.setUnlocalizedName("WPulpBar");
+		this.setTextureName("WPulpBar");
+		this.setCreativeTab(Tabs.StoTab);
+	}
 
-		public WPulpBar() {
-			
-			this.setUnlocalizedName("WPulpBar");
-			this.setTextureName("WPulpBar");
-			this.setCreativeTab(Tabs.StoTab);
-		}
+//Texture Icon	
 
-	//Texture Icon	
-
-		@Override
-		@SideOnly(Side.CLIENT)
-			
-		public void registerIcons(IIconRegister iconReg){
-			itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-				.substring(this.getUnlocalizedName().indexOf(".")+1));
-		}
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
 			
 }

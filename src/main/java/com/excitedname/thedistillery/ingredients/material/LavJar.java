@@ -25,40 +25,40 @@ public class LavJar extends Item {
 
 	private Block isFull;
 	
-		public LavJar(BlockLiquid flowingLava) {
-			
-			this.setUnlocalizedName("LavJar");
-			this.setTextureName("LavJar");
-			this.setCreativeTab(Tabs.IngTab);
-			this.setContainerItem(Ing.GJar);
-			this.isFull = flowingLava;
-		}
+	public LavJar(BlockLiquid flowingLava) {
+		
+		this.setUnlocalizedName("LavJar");
+		this.setTextureName("LavJar");
+		this.setCreativeTab(Tabs.IngTab);
+		this.setContainerItem(Ing.GJar);
+		this.isFull = flowingLava;
+	}
 
-public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, EntityPlayer p_77659_3_)
+public ItemStack onItemRightClick(ItemStack par1LavJar, World p_77659_2_, EntityPlayer p_77659_3_)
 {
     boolean flag = this.isFull == Blocks.air;
     MovingObjectPosition movingobjectposition = this.getMovingObjectPositionFromPlayer(p_77659_2_, p_77659_3_, flag);
 
     if (movingobjectposition == null)
     {
-        return p_77659_1_;
+        return par1LavJar;
     }
     else
     {
-        FillBucketEvent event = new FillBucketEvent(p_77659_3_, p_77659_1_, p_77659_2_, movingobjectposition);
+        FillBucketEvent event = new FillBucketEvent(p_77659_3_, par1LavJar, p_77659_2_, movingobjectposition);
         if (MinecraftForge.EVENT_BUS.post(event))
         {
-            return p_77659_1_;
+            return par1LavJar;
         }
 
         if (event.getResult() == Event.Result.ALLOW)
         {
             if (p_77659_3_.capabilities.isCreativeMode)
             {
-                return p_77659_1_;
+                return par1LavJar;
             }
 
-            if (--p_77659_1_.stackSize <= 0)
+            if (--par1LavJar.stackSize <= 0)
             {
                 return event.result;
             }
@@ -68,7 +68,7 @@ public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, Entity
                 p_77659_3_.dropPlayerItemWithRandomChoice(event.result, false);
             }
 
-            return p_77659_1_;
+            return par1LavJar;
         }
         if (movingobjectposition.typeOfHit == MovingObjectPosition.MovingObjectType.BLOCK)
         {
@@ -78,14 +78,14 @@ public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, Entity
 
             if (!p_77659_2_.canMineBlock(p_77659_3_, i, j, k))
             {
-                return p_77659_1_;
+                return par1LavJar;
             }
 
             if (flag)
             {
-                if (!p_77659_3_.canPlayerEdit(i, j, k, movingobjectposition.sideHit, p_77659_1_))
+                if (!p_77659_3_.canPlayerEdit(i, j, k, movingobjectposition.sideHit, par1LavJar))
                 {
-                    return p_77659_1_;
+                    return par1LavJar;
                 }
 
                 Material material = p_77659_2_.getBlock(i, j, k).getMaterial();
@@ -94,13 +94,13 @@ public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, Entity
                 if (material == Material.water && l == 0)
                 {
                     p_77659_2_.setBlockToAir(i, j, k);
-                    return this.func_150910_a(p_77659_1_, p_77659_3_, Ing.H2OJar);
+                    return this.func_150910_a(par1LavJar, p_77659_3_, Ing.H2OJar);
                 }
 
                 if (material == Material.lava && l == 0)
                 {
                     p_77659_2_.setBlockToAir(i, j, k);
-                    return this.func_150910_a(p_77659_1_, p_77659_3_, Ing.LavJar);
+                    return this.func_150910_a(par1LavJar, p_77659_3_, Ing.LavJar);
                 }
             }
             else
@@ -140,9 +140,9 @@ public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, Entity
                     ++i;
                 }
 
-                if (!p_77659_3_.canPlayerEdit(i, j, k, movingobjectposition.sideHit, p_77659_1_))
+                if (!p_77659_3_.canPlayerEdit(i, j, k, movingobjectposition.sideHit, par1LavJar))
                 {
-                    return p_77659_1_;
+                    return par1LavJar;
                 }
 
                 if (this.tryPlaceContainedLiquid(p_77659_2_, i, j, k) && !p_77659_3_.capabilities.isCreativeMode)
@@ -152,17 +152,17 @@ public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, Entity
             }
         }
 
-        return p_77659_1_;
+        return par1LavJar;
     }
 }
 
-private ItemStack func_150910_a(ItemStack p_150910_1_, EntityPlayer p_150910_2_, Item p_150910_3_)
+private ItemStack func_150910_a(ItemStack par1LavJar, EntityPlayer p_150910_2_, Item p_150910_3_)
 {
     if (p_150910_2_.capabilities.isCreativeMode)
     {
-        return p_150910_1_;
+        return par1LavJar;
     }
-    else if (--p_150910_1_.stackSize <= 0)
+    else if (--par1LavJar.stackSize <= 0)
     {
         return new ItemStack(p_150910_3_);
     }
@@ -173,7 +173,7 @@ private ItemStack func_150910_a(ItemStack p_150910_1_, EntityPlayer p_150910_2_,
             p_150910_2_.dropPlayerItemWithRandomChoice(new ItemStack(p_150910_3_, 1, 0), false);
         }
 
-        return p_150910_1_;
+        return par1LavJar;
     }
 }
 

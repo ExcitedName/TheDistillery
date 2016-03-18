@@ -11,26 +11,25 @@ import net.minecraft.item.ItemStack;
 
 public class LilyEBar extends Item {
 
-
-		public LilyEBar() {
-			
-			this.setUnlocalizedName("LilyEBar");
-			this.setTextureName("LilyEBar");
-			this.setCreativeTab(Tabs.StoTab);
-		}
+	public LilyEBar() {
 		
-		public boolean hasEffect(ItemStack par1GlassBar, int pass){
-			return true;
-		}
+		this.setUnlocalizedName("LilyEBar");
+		this.setTextureName("LilyEBar");
+		this.setCreativeTab(Tabs.StoTab);
+	}
+	
+	public boolean hasEffect(ItemStack par1LilyEBar, int pass){
+		return true;
+	}
 
-	//Texture Icon	
+//Texture Icon	
 
-		@Override
-		@SideOnly(Side.CLIENT)
-			
-		public void registerIcons(IIconRegister iconReg){
-			itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-				.substring(this.getUnlocalizedName().indexOf(".")+1));
-		}
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
 			
 }

@@ -12,21 +12,21 @@ import net.minecraft.item.ItemStack;
 public class FlourBar extends Item {
 
 
-		public FlourBar() {
-			
-			this.setUnlocalizedName("FlourBar");
-			this.setTextureName("FlourBar");
-			this.setCreativeTab(Tabs.StoTab);
-		}
+	public FlourBar() {
+		
+		this.setUnlocalizedName("FlourBar");
+		this.setTextureName("FlourBar");
+		this.setCreativeTab(Tabs.StoTab);
+	}
 
-	//Texture Icon	
+//Texture Icon	
 
-		@Override
-		@SideOnly(Side.CLIENT)
-			
-		public void registerIcons(IIconRegister iconReg){
-			itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-				.substring(this.getUnlocalizedName().indexOf(".")+1));
-		}
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
 			
 }

@@ -35,11 +35,11 @@ public class FruJuiHea extends Item {
 		return true;
 	}
 
-	public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+	public ItemStack onEaten(ItemStack par1FruJuiHea, World par2World, EntityPlayer par3EntityPlayer)
     {
         if (!par3EntityPlayer.capabilities.isCreativeMode)
         {
-            --par1ItemStack.stackSize;
+            --par1FruJuiHea.stackSize;
         }
        
         if (!par2World.isRemote)
@@ -51,23 +51,23 @@ public class FruJuiHea extends Item {
 			par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 5, this.FirstPotionAmplifier));
 		}
 
-        return par1ItemStack;
+        return par1FruJuiHea;
     }
 
-    public int getMaxItemUseDuration(ItemStack par1ItemStack)
+    public int getMaxItemUseDuration(ItemStack par1FruJuiHea)
     {
         return 14;
     }
 
-    public EnumAction getItemUseAction(ItemStack par1ItemStack)
+    public EnumAction getItemUseAction(ItemStack par1FruJuiHea)
     {
         return EnumAction.drink;
     }
 
-    public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+    public ItemStack onItemRightClick(ItemStack par1FruJuiHea, World par2World, EntityPlayer par3EntityPlayer)
     {
-    	par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
-        return par1ItemStack;
+    	par3EntityPlayer.setItemInUse(par1FruJuiHea, this.getMaxItemUseDuration(par1FruJuiHea));
+        return par1FruJuiHea;
     }
     
     public Item getContainerItem()

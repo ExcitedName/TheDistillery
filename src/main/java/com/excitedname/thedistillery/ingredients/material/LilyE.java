@@ -11,7 +11,6 @@ import net.minecraft.item.ItemStack;
 
 public class LilyE extends Item {
 
-
 	public LilyE() {
 		
 		this.setUnlocalizedName("LilyE");
@@ -19,7 +18,7 @@ public class LilyE extends Item {
 		this.setCreativeTab(Tabs.IngTab);
 	}
 	
-	public boolean hasEffect(ItemStack par1ComDist, int pass){
+	public boolean hasEffect(ItemStack par1LilyE, int pass){
 		return true;
 	}
 

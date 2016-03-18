@@ -11,26 +11,25 @@ import net.minecraft.item.ItemStack;
 
 public class FruJuiHeaVat extends Item {
 
-
-		public FruJuiHeaVat() {
-			
-			this.setUnlocalizedName("FruJuiHeaVat");
-			this.setTextureName("FruJuiHeaVat");
-			this.setCreativeTab(Tabs.StoTab);
-		}
+	public FruJuiHeaVat() {
 		
-		public boolean hasEffect(ItemStack par1ComDist, int pass){
-			return true;
-		}
+		this.setUnlocalizedName("FruJuiHeaVat");
+		this.setTextureName("FruJuiHeaVat");
+		this.setCreativeTab(Tabs.StoTab);
+	}
+	
+	public boolean hasEffect(ItemStack par1FruJuiHeaVat, int pass){
+		return true;
+	}
 
-	//Texture Icon	
+//Texture Icon	
 
-		@Override
-		@SideOnly(Side.CLIENT)
-			
-		public void registerIcons(IIconRegister iconReg){
-			itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-				.substring(this.getUnlocalizedName().indexOf(".")+1));
-		}
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
 			
 }

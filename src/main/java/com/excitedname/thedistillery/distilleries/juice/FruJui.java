@@ -26,11 +26,11 @@ public class FruJui extends Item {
 
 	}
 
-	public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+	public ItemStack onEaten(ItemStack par1FruJui, World par2World, EntityPlayer par3EntityPlayer)
     {
         if (!par3EntityPlayer.capabilities.isCreativeMode)
         {
-            --par1ItemStack.stackSize;
+            --par1FruJui.stackSize;
         }
        
         if (!par2World.isRemote)
@@ -38,23 +38,23 @@ public class FruJui extends Item {
         	par3EntityPlayer.clearActivePotions();
         }
 
-        return par1ItemStack;
+        return par1FruJui;
     }
 
-    public int getMaxItemUseDuration(ItemStack par1ItemStack)
+    public int getMaxItemUseDuration(ItemStack par1FruJui)
     {
         return 14;
     }
 
-    public EnumAction getItemUseAction(ItemStack par1ItemStack)
+    public EnumAction getItemUseAction(ItemStack par1FruJui)
     {
         return EnumAction.drink;
     }
 
-    public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+    public ItemStack onItemRightClick(ItemStack par1FruJui, World par2World, EntityPlayer par3EntityPlayer)
     {
-    	par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
-        return par1ItemStack;
+    	par3EntityPlayer.setItemInUse(par1FruJui, this.getMaxItemUseDuration(par1FruJui));
+        return par1FruJui;
     }
     
     public Item getContainerItem()

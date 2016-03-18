@@ -11,26 +11,25 @@ import net.minecraft.item.ItemStack;
 
 public class DistCryEBar extends Item {
 
-
-		public DistCryEBar() {
-			
-			this.setUnlocalizedName("DistCryEBar");
-			this.setTextureName("DistCryEBar");
-			this.setCreativeTab(Tabs.StoTab);
-		}
+	public DistCryEBar() {
 		
-		public boolean hasEffect(ItemStack par1GlassBar, int pass){
-			return true;
-		}
+		this.setUnlocalizedName("DistCryEBar");
+		this.setTextureName("DistCryEBar");
+		this.setCreativeTab(Tabs.StoTab);
+	}
+	
+	public boolean hasEffect(ItemStack par1DistCryEBar, int pass){
+		return true;
+	}
 
-	//Texture Icon	
+//Texture Icon	
 
-		@Override
-		@SideOnly(Side.CLIENT)
-			
-		public void registerIcons(IIconRegister iconReg){
-			itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-				.substring(this.getUnlocalizedName().indexOf(".")+1));
-		}
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
 			
 }

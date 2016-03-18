@@ -11,22 +11,21 @@ import net.minecraft.item.ItemStack;
 
 public class GlassBar extends Item {
 
+	public GlassBar() {
+		
+		this.setUnlocalizedName("GlassBar");
+		this.setTextureName("GlassBar");
+		this.setCreativeTab(Tabs.StoTab);
+	}
 
-		public GlassBar() {
-			
-			this.setUnlocalizedName("GlassBar");
-			this.setTextureName("GlassBar");
-			this.setCreativeTab(Tabs.StoTab);
-		}
+//Texture Icon	
 
-	//Texture Icon	
-
-		@Override
-		@SideOnly(Side.CLIENT)
-			
-		public void registerIcons(IIconRegister iconReg){
-			itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-				.substring(this.getUnlocalizedName().indexOf(".")+1));
-		}
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
 			
 }

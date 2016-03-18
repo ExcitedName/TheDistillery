@@ -16,12 +16,12 @@ import net.minecraft.util.MathHelper;
 
 public class Bla extends Item {
 	
-public Bla() {
-	
-	this.setUnlocalizedName("Bla");
-	this.setTextureName("Bla");
-	this.setCreativeTab(Tabs.IngTab);
-}
+	public Bla() {
+		
+		this.setUnlocalizedName("Bla");
+		this.setTextureName("Bla");
+		this.setCreativeTab(Tabs.IngTab);
+	}
 	
 //Texture Icon	
 

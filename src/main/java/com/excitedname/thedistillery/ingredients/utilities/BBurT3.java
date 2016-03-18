@@ -12,25 +12,25 @@ import net.minecraft.item.ItemStack;
 public class BBurT3 extends Item {
 
 
-		public BBurT3() {
-			
-			this.setUnlocalizedName("BBurT3");
-			this.setTextureName("BBurT3");
-			this.setCreativeTab(Tabs.IngTab);
-		}
+	public BBurT3() {
 		
-		public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
-			return true;
-		}
+		this.setUnlocalizedName("BBurT3");
+		this.setTextureName("BBurT3");
+		this.setCreativeTab(Tabs.IngTab);
+	}
+	
+	public boolean hasEffect(ItemStack par1BBurT3, int pass){
+		return true;
+	}
 
-	//Texture Icon	
+//Texture Icon	
 
-		@Override
-		@SideOnly(Side.CLIENT)
-			
-		public void registerIcons(IIconRegister iconReg){
-			itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
-				.substring(this.getUnlocalizedName().indexOf(".")+1));
-		}
+@Override
+@SideOnly(Side.CLIENT)
+	
+public void registerIcons(IIconRegister iconReg){
+	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
+		.substring(this.getUnlocalizedName().indexOf(".")+1));
+}
 			
 }
