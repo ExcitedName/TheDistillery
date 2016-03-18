@@ -3,6 +3,7 @@
 //Dis
 
     //Distilleries
+item.DistDist.name=Distillery(Filled)
 item.DistMin.name=Distillery(Miner)
 item.DistTra.name=Distillery(Traveller)
 item.DistIro.name=Distillery(Iron Skin)

@@ -16,7 +16,7 @@ import net.minecraft.util.MathHelper;
 
 public class Dist extends Item {
 
-	private static final String[] Meta = new String[] {"Min", "Tra", "Iro", "War", "Hea", "Wat", "Hot"};
+	private static final String[] Meta = new String[] {"Dist", "Min", "Tra", "Iro", "War", "Hea", "Wat", "Hot"};
 	@SideOnly(Side.CLIENT)
     private IIcon[] IIcons;
 
@@ -30,13 +30,13 @@ public class Dist extends Item {
 @SideOnly(Side.CLIENT)
 public IIcon getIconFromDamage(int par1Icons)
 	{
-	    int j = MathHelper.clamp_int(par1Icons, 0, 6);
+	    int j = MathHelper.clamp_int(par1Icons, 0, 7);
 	    return this.IIcons[j];
 	}
 
 public String getUnlocalizedName(ItemStack par1Dist)
 	{
-	    int i = MathHelper.clamp_int(par1Dist.getItemDamage(), 0, 6);
+	    int i = MathHelper.clamp_int(par1Dist.getItemDamage(), 0, 7);
 	    return super.getUnlocalizedName() + Meta[i];
 	}
 
